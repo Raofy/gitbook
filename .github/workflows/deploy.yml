@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
@@ -27,4 +29,11 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _book
-          branch: gh-pages
+          branch: master
+          clean: true
+          clean-exclude: |
+            .git
+            .github
+            README.md
+            LICENSE
+            .gitignore
