@@ -1,0 +1,14 @@
+
+# Node modulesAdd commentMore actions
+node_modules/
+# HonKit build outputAdd commentMore actions
+_book/
+
+# OS generated filesAdd commentMore actions
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

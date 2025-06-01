@@ -1,0 +1,152 @@
+/* 基本样式设置 */
+.book-summary {
+    background-color: #f8f9fa;
+}
+
+.book-body {
+    background-color: #ffffff;
+}
+
+/* 隐藏 honkit 相关信息 */
+.book-summary .book-summary-footer,
+.book-header .pull-right,
+.book-header .pull-right .dropdown-menu,
+.book-header .pull-right .dropdown-menu .dropdown-item:last-child {
+    display: none !important;
+}
+
+/* 隐藏页脚信息 */
+.book-footer {
+    display: none !important;
+}
+
+/* 搜索框样式优化 */
+.book-search {
+    padding: 6px;
+}
+
+.book-search input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
+
+/* 导航样式优化 */
+.book-summary ul.summary li a {
+    color: #333;
+    font-weight: normal;
+}
+
+.book-summary ul.summary li.active > a {
+    color: #0366d6;
+    font-weight: bold;
+}
+
+/* 代码块样式 */
+.markdown-section pre {
+    background-color: #f6f8fa;
+    border-radius: 4px;
+}
+
+.markdown-section code {
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* 标题样式 */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown-section h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.markdown-section h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+/* 链接样式 */
+.markdown-section a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.markdown-section a:hover {
+    text-decoration: underline;
+}
+
+/* 表格样式 */
+.markdown-section table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.markdown-section table th,
+.markdown-section table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown-section table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+.markdown-section table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+/* 引用块样式 */
+.markdown-section blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    margin: 0 0 16px 0;
+}
+
+/* 列表样式 */
+.markdown-section ul,
+.markdown-section ol {
+    padding-left: 2em;
+}
+
+.markdown-section li {
+    margin: 0.25em 0;
+}
+
+/* 图片样式 */
+.markdown-section img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .book-summary {
+        width: 300px;
+    }
+    
+    .book-body {
+        left: 300px;
+    }
+    
+    .book-body .body-inner {
+        padding: 15px;
+    }
+} 

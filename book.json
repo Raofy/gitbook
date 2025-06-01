@@ -1,0 +1,33 @@
+{
+  "title": "我的文档",
+  "author": "Raofy",
+  "language": "zh-hans",
+  "plugins": [
+    "highlight",
+    "sharing",
+    "fontsettings",
+    "theme-default"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showSummary": true,
+      "showLevel": true,
+      "showEditLink": false,
+      "showPoweredBy": false
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": []
+    }
+  }
+}
