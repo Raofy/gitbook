@@ -1,0 +1,20 @@
+{
+  "name": "gitbook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build",
+    "deploy": "honkit build && touch _book/.nojekyll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "gitbook-plugin-highlight": "^2.0.3",
+    "gitbook-plugin-sharing": "^1.0.2",
+    "honkit": "^4.0.7"
+  }
+}
