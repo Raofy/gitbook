@@ -37,3 +37,15 @@ jobs:
             README.md
             LICENSE
             .gitignore
+      - name: Clear DNS Cache
+        run: |
+          # 使用 curl 访问 GitHub Pages 的清除缓存 API
+          curl -X POST "https://api.github.com/repos/${{ github.repository }}/pages/builds" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json"
+          
+          # 等待几秒钟让 DNS 更新
+          sleep 10
+          
+          # 使用 dig 命令验证 DNS 更新
+          dig ${{ github.repository_owner }}.github.io +short
